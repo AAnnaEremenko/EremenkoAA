@@ -9,12 +9,3 @@ def get_mask_account(user_account: str, mask_char: str = "*") -> str:
     """Функция маскировки номера банковского счета"""
     mask_user_account = mask_char * 2 + user_account[-4:]
     return mask_user_account
-
-
-user_card_number = input("Введите номер карты: ")
-
-print(get_mask_card_number(user_card_number))
-
-user_account = input("Введите номер счета: ")
-
-print(get_mask_account(user_account))
